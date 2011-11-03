@@ -1,3 +1,9 @@
+# revision 20710
+# category Package
+# catalog-ctan /macros/latex/contrib/fncychap
+# catalog-date 2010-12-10 10:22:28 +0100
+# catalog-license lppl1.3
+# catalog-version v1.34
 Name:		texlive-fncychap
 Version:	v1.34
 Release:	1
@@ -56,6 +62,7 @@ known as FancyChapter.
 %doc %{_texmfdistdir}/doc/latex/fncychap/fncychap.pdf
 %doc %{_texmfdistdir}/doc/latex/fncychap/fncychap.tex
 %doc %{_texmfdistdir}/doc/latex/fncychap/manifest.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -66,3 +73,5 @@ known as FancyChapter.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
