@@ -6,7 +6,7 @@
 # catalog-version v1.34
 Name:		texlive-fncychap
 Version:	v1.34
-Release:	4
+Release:	5
 Summary:	Seven predefined chapter heading styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fncychap
