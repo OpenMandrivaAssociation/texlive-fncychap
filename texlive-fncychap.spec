@@ -1,12 +1,6 @@
-# revision 20710
-# category Package
-# catalog-ctan /macros/latex/contrib/fncychap
-# catalog-date 2010-12-10 10:22:28 +0100
-# catalog-license lppl1.3
-# catalog-version v1.34
 Name:		texlive-fncychap
-Version:	v1.34
-Release:	10
+Version:	1.34
+Release:	1
 Summary:	Seven predefined chapter heading styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fncychap
