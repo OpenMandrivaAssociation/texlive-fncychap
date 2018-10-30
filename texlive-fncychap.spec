@@ -1,6 +1,6 @@
 Name:		texlive-fncychap
 Version:	1.34
-Release:	1
+Release:	2
 Summary:	Seven predefined chapter heading styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fncychap
