@@ -1,12 +1,12 @@
 Name:		texlive-fncychap
-Version:	1.34
-Release:	2
+Version:	20710
+Release:	1
 Summary:	Seven predefined chapter heading styles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/fncychap
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fncychap.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fncychap.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fncychap.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fncychap.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ create additional chapter headings. This package was previously
 known as FancyChapter.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -50,24 +50,10 @@ known as FancyChapter.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> v1.34-2
-+ Revision: 752001
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> v1.34-1
-+ Revision: 718471
-- texlive-fncychap
-- texlive-fncychap
-- texlive-fncychap
-- texlive-fncychap
-
